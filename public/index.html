@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    
+    <div class="formulario">
+        <h1>Registro</h1>
+        <!-- Quitamos el action para manejarlo con JS -->
+        <form id="loginForm" method="post"> 
+            <div class="username">
+                <input type="text" id="nombre" placeholder="Nombre" name="usuario"required>
+            </div>
+
+            <div class="correo">
+                <input type="email" id="correo" placeholder="Correo" name="email" required>
+            </div>
+
+            <div class="contrasena">                
+                <input type="password" id="password" placeholder="Contraseña" name="passwd" required>
+            </div>
+
+            <input id="btniniciar" type="submit" value="Registrarse">
+        </form>
+    </div>
+    <!-- Importante conectar el script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
